@@ -18,14 +18,37 @@ print(x < 5 or x == 10)   # True
 print(not(x == 10))       # False
 print(1 < x < 20)         # True
 
-
+#store calculator
+score = int(input("Enter your score (0-100):"))
+#if score is between 90 and 100
+#assign grade A
+if score >= 90 and score <= 100:
+    print("Grade: A")
+#if score is between 80 and 90
+#assign grade B
+elif score >= 80 and score < 90:
+    print("Grade: B")
+#if score is between 70 and 79
+# assign grade C
+elif score >= 70 and score < 80:
+    print("Grade: C")
+#If score is between 60 and 69
+# assign grade D
+if score >= 60 and score < 70:
+    print("Grade: D")
+#If score is lowewr than 60
+#assign grade F
+elif score < 60:
+    print("Grade: F")  
 # Practice Problems:
 
 # Write an expression that checks if a number is between 50 and 100 (inclusive).
-
+x = int(input("Enter a number: "))
+print(50 <= x <= 100)
 # Write an expression that checks if a number is NOT equal to 0 and greater than 10.
-
+y = int(input("Enter another number: "))
+print(y != 0 and y > 10)
 # Use chained comparison to check if 3 < 4 < 5.
-
+print(3 < 4 < 5)
 # Challenge: Create a password rule using logical operators:
 
